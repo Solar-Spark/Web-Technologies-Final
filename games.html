@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Games</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="nav-panel">
+                <ul>
+                    <li><a href="game-news.html">Game News</a></li>
+                    <li><a href="movie-news.html">Movie News</a></li>
+                    <li><a href="movies.html">Movies</a></li>
+                    <li><a href="games.html" class="menu-highlight">Games</a></li>
+                    <li><a href="about-us.html">About us</a></li>
+                    <li><a href="contact-us.html">Contact us</a></li>
+                    <li><a href="my_wish_for_movies.html">Wish List</a></li>
+                    <li><a href="number-sort.html">Sort</a></li>
+                </ul>
+            </nav>
+            <div id="clock"></div>
+        </header>
+        <div class="image-shell">
+            <div class="image-frame-showcase">
+                <img src="images/games.jpeg" alt="">
+                <div class="intro-text">
+                    <h1>You Play</h1>
+                </div>
+            </div>
+        </div>
+        <div id="darkmode-btn" onclick="setDarkMode()"></div>
+        <div id="clock-btn" onclick="showTime()"><img src="Images/time.png"></div>
+        <div id="time-block" class="time-hide">
+            <h3 id="time-greeting">Good </h3>
+            <p id="time-text"></p>
+        </div>
+        <div class="games-section" id="games"></div>
+            <h2 class="section-heading">Recommend for gaming</h2>
+            <div class="games-grid">
+                <div class="game-box">
+                    <div class="image-frame">
+                        <img src="images/g1.jpg" alt="">
+                    </div>
+                    <h3>Grand Theft Auto V</h3>
+                    <span> Open world | Action-adventure game</span>
+                </div>
+                <div class="game-box">
+                    <div class="image-frame">
+                        <img src="images/g2.jpg" alt="">
+                    </div>
+                    <h3>Minecraft</h3>
+                    <span>Survival game | Action-adventure game</span>
+                </div>
+                <div class="game-box">
+                    <div class="image-frame">
+                        <img src="images/g3.jpeg" alt="">
+                    </div>
+                    <h3>The Elder Scrolls V: Skyrim</h3>
+                    <span> Open world | Shooter Video Game</span>
+                </div>
+                <div class="game-box">
+                    <div class="image-frame">
+                        <img src="images/g4.jpeg" alt="">
+                    </div>
+                    <h3>The Witcher 3: Wild Hunt</h3>
+                    <span>Open world | action role-playing game</span>
+                </div>
+                <div class="game-box">
+                    <div class="image-frame">
+                        <img src="images/g5.jpg" alt="">
+                    </div>
+                    <h3>Assassin's Creed IV: Black Flag</h3>
+                    <span> Stealth game |  Action-adventure game</span>
+                </div>
+                <div class="game-box">
+                    <div class="image-frame">
+                        <img src="images/g6.jpg" alt="">
+                    </div>
+                    <h3>God of War</h3>
+                    <span> Action-adventure game | Fighting game</span>
+                </div>
+                <div class="game-box">
+                    <div class="image-frame">
+                        <img src="images/g7.jpg" alt="">
+                    </div>
+                    <h3>Horizon Zero Dawn</h3>
+                    <span> Open world | action role-playing</span>
+                </div>
+                <div class="game-box">
+                    <div class="image-frame">
+                        <img src="images/g8.jpeg" alt="">
+                    </div>
+                    <h3></h3>
+                    <span> Open world | action-adventure</span>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="team-members">
+                <p>Abukhassym Khydyrbayev, Pavel Pertsev, Yernur Kazhyakpar</p>
+            </div>
+        </footer>
+        <script src="js/time.js"></script>
+        <script src="js/darkMode.js"></script>
+    </body>
+</html>

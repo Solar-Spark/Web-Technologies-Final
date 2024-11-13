@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Movies</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="nav-panel">
+                <ul>
+                    <li><a href="game-news.html">Game News</a></li>
+                    <li><a href="movie-news.html">Movie News</a></li>
+                    <li><a href="movies.html" class="menu-highlight">Movies</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="about-us.html">About us</a></li>
+                    <li><a href="contact-us.html">Contact us</a></li>
+                    <li><a href="my_wish_for_movies.html">Wish List</a></li>
+                    <li><a href="number-sort.html">Sort</a></li>
+                </ul>
+            </nav>
+            <div id="clock"></div>
+        </header>
+        <div id="darkmode-btn" onclick="setDarkMode()"></div>
+        <div id="clock-btn" onclick="showTime()"><img src="Images/time.png"></div>
+        <div id="time-block" class="time-hide">
+            <h3 id="time-greeting">Good </h3>
+            <p id="time-text"></p>
+        </div>
+        <div class="image-shell">
+            <div class="image-frame-showcase">
+                <img src="images/movies.jpg" alt="">
+                <div class="intro-text">
+                    <span>Sci-fi/Action/Comedy</span>
+                    <h1>Deadpool and <br>Wolverine</h1>
+                    <a href="" class="action-btn">Watch Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="cinema-section" id="movies">
+            <h2 class="section-heading">Recommend for watching</h2>
+            <div class="film-grid">
+                <div class="film-box">
+                    <div class="image-frame">
+                        <img src="images/m1.jpg" alt="">
+                    </div>
+                    <h3>Dune</h3>
+                    <span>120 min | Action</span>
+                </div>
+                <div class="film-box">
+                    <div class="image-frame">
+                        <img src="images/m2.jpg" alt="">
+                    </div>
+                    <h3>Red Sparrow</h3>
+                    <span>120 min | Action</span>
+                </div>
+                <div class="film-box">
+                    <div class="image-frame">
+                        <img src="images/m3.jpg" alt="">
+                    </div>
+                    <h3>Moneyball</h3>
+                    <span>120 min | Thriller</span>
+                </div>
+                <div class="film-box">
+                    <div class="image-frame">
+                        <img src="images/m4.jpg" alt="">
+                    </div>
+                    <h3>Trouble with the Curve 2</h3>
+                    <span>120 min | Action</span>
+                </div>
+                <div class="film-box">
+                    <div class="image-frame">
+                        <img src="images/m5.jpg" alt="">
+                    </div>
+                    <h3>The Dictator</h3>
+                    <span>120 min | Adventure</span>
+                </div>
+                <div class="film-box">
+                    <div class="image-frame">
+                        <img src="images/m6.jpg" alt="">
+                    </div>
+                    <h3>Haunted Mansion</h3>
+                    <span>120 min | Thriller</span>
+                </div>
+                <div class="film-box">
+                    <div class="image-frame">
+                        <img src="images/m7.jpg" alt="">
+                    </div>
+                    <h3>Pitch Perfect</h3>
+                    <span>120 min | Adventure</span>
+                </div>
+                <div class="film-box">
+                    <div class="image-frame">
+                        <img src="images/m8.jpg" alt="">
+                    </div>
+                    <h3>American Made</h3>
+                    <span>120 min | Action</span>
+                </div>
+                <div class="film-box">
+                    <div class="image-frame">
+                        <img src="images/m9.jpg" alt="">
+                    </div>
+                    <h3>Searching</h3>
+                    <span>120 min | Action</span>
+                </div>
+                <div class="film-box">
+                    <div class="image-frame">
+                        <img src="images/m10.jpg" alt="">
+                    </div>
+                    <h3>Ballerina</h3>
+                    <span>120 min | Action</span>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="team-members">
+                <p>Abukhassym Khydyrbayev, Pavel Pertsev, Yernur Kazhyakpar</p>
+            </div>
+        </footer>
+        <script src="js/time.js"></script>
+        <script src="js/darkMode.js"></script>
+    </body>
+</html>

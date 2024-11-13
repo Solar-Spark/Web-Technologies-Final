@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interactive To-Do List</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="nav-panel">
+                <ul>
+                    <li tabindex="0"><a href="game-news.html">Game News</a></li>
+                    <li tabindex="0"><a href="movie-news.html">Movie News</a></li>
+                    <li tabindex="0"><a href="movies.html">Movies</a></li>
+                    <li tabindex="0"><a href="games.html">Games</a></li>
+                    <li tabindex="0"><a href="about-us.html">About us</a></li>
+                    <li tabindex="0"><a href="contact-us.html">Contact us</a></li>
+                    <li tabindex="0"><a href="my_wish_for_movies.html" class="menu-highlight">Wish List</a></li>
+                    <li tabindex="0"><a href="number-sort.html">Sort</a></li>
+                </ul>
+            </nav>            
+            <div id="clock"></div>
+        </header>
+        <div id="darkmode-btn" onclick="setDarkMode()"></div>
+        <div id="clock-btn" onclick="showTime()"><img src="Images/time.png"></div>
+        <div id="time-block" class="time-hide">
+            <h3 id="time-greeting">Good </h3>
+            <p id="time-text"></p>
+        </div>
+        <div class="to-do-wrapper">
+            <section class="form-section">
+                <div id="recommend-film">
+                    <h1>We can help you to make a choice</h1>
+                    <div id="recommend-txt">Click the button to make recomendation</div>
+                    <button id="recommend-btn">Recommend</button>
+                </div>
+                <h1>Watch later</h1>
+                <div class="todo-container">
+                    <input type="text" id="task-input" placeholder="Enter a new film" />
+                    <button id="add-task-btn">Add the film</button>
+                    <ul id="task-list"></ul>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <div class="team-members">
+                <p>Abukhassym Khydyrbayev, Pavel Pertsev, Yernur Kazhyakpar</p>
+            </div>
+        </footer>
+        <script src="js/time.js"></script>
+        <script src="js/todowishlist.js"></script>
+        <script src="js/darkMode.js"></script>
+        <script src="js/keyboardNavigation.js"></script>
+        <script src="js/recommendFilm.js"></script>
+    </body>
+</html>
