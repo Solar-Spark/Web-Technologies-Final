@@ -8,22 +8,21 @@
     </head>
     <body>
         <header>
+            <input type="checkbox" id="menu-mobile" />
             <nav class="nav-panel">
-                <ul>
-                    <li tabindex="0"><a href="game-news.html">Game News</a></li>
-                    <li tabindex="0"><a href="movie-news.html">Movie News</a></li>
-                    <li tabindex="0"><a href="movies.html">Movies</a></li>
-                    <li tabindex="0"><a href="games.html">Games</a></li>
-                    <li tabindex="0"><a href="about-us.html">About us</a></li>
-                    <li tabindex="0"><a href="contact-us.html">Contact us</a></li>
-                    <li tabindex="0"><a href="my_wish_for_movies.html" class="menu-highlight">Wish List</a></li>
-                    <li tabindex="0"><a href="number-sort.html">Sort</a></li>
+                <label for="menu-mobile" class="toggle-button" onclick><img src="Images/menu-icon.png"></label>
+                <ul class="main-menu">
+                    <li><a href="game-news.html">Game News</a></li>
+                    <li><a href="movie-news.html">Movie News</a></li>
+                    <li><a href="movies.html">Movies</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="about-us.html">About us</a></li>
+                    <li><a href="contact-us.html">Contact us</a></li>
+                    <li><a href="my_wish_for_movies.html" class="menu-highlight">Wish List</a></li>
                 </ul>
-            </nav>            
-            <div id="clock"></div>
+            </nav>
         </header>
         <div id="darkmode-btn" onclick="setDarkMode()"></div>
-        <div id="clock-btn" onclick="showTime()"><img src="Images/time.png"></div>
         <div id="time-block" class="time-hide">
             <h3 id="time-greeting">Good </h3>
             <p id="time-text"></p>

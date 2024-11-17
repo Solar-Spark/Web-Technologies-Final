@@ -8,8 +8,10 @@
     </head>
     <body>
         <header>
+            <input type="checkbox" id="menu-mobile" />
             <nav class="nav-panel">
-                <ul>
+                <label for="menu-mobile" class="toggle-button" onclick><img src="Images/menu-icon.png"></label>
+                <ul class="main-menu">
                     <li><a href="game-news.html">Game News</a></li>
                     <li><a href="movie-news.html">Movie News</a></li>
                     <li><a href="movies.html">Movies</a></li>
@@ -17,21 +19,17 @@
                     <li><a href="about-us.html">About us</a></li>
                     <li><a href="contact-us.html">Contact us</a></li>
                     <li><a href="my_wish_for_movies.html">Wish List</a></li>
-                    <li><a href="number-sort.html">Sort</a></li>
                 </ul>
             </nav>
-            <div id="clock"></div>
         </header>
-        <div class="image-shell">
-            <div class="image-frame-showcase">
-                <img src="images/games.jpeg" alt="">
-                <div class="intro-text">
-                    <h1>You Play</h1>
-                </div>
+        <div class="image-frame-showcase">
+            <div class="img-overlay"></div>
+            <img src="images/games.jpeg" alt="">
+            <div class="intro-text">
+                <h1>You Play</h1>
             </div>
         </div>
         <div id="darkmode-btn" onclick="setDarkMode()"></div>
-        <div id="clock-btn" onclick="showTime()"><img src="Images/time.png"></div>
         <div id="time-block" class="time-hide">
             <h3 id="time-greeting">Good </h3>
             <p id="time-text"></p>
@@ -92,7 +90,7 @@
                     <div class="image-frame">
                         <img src="images/g8.jpeg" alt="">
                     </div>
-                    <h3></h3>
+                    <h3>Outer Wilds</h3>
                     <span> Open world | action-adventure</span>
                 </div>
             </div>

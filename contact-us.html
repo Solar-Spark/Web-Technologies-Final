@@ -8,8 +8,10 @@
     </head>
     <body>
         <header>
+            <input type="checkbox" id="menu-mobile" />
             <nav class="nav-panel">
-                <ul>
+                <label for="menu-mobile" class="toggle-button" onclick><img src="Images/menu-icon.png"></label>
+                <ul class="main-menu">
                     <li><a href="game-news.html">Game News</a></li>
                     <li><a href="movie-news.html">Movie News</a></li>
                     <li><a href="movies.html">Movies</a></li>
@@ -17,14 +19,11 @@
                     <li><a href="about-us.html">About us</a></li>
                     <li><a href="contact-us.html" class="menu-highlight">Contact us</a></li>
                     <li><a href="my_wish_for_movies.html">Wish List</a></li>
-                    <li><a href="number-sort.html">Sort</a></li>
                 </ul>
             </nav>
-            <div id="clock"></div>
         </header>
         <main>
             <div id="darkmode-btn" onclick="setDarkMode()"></div>
-            <div id="clock-btn" onclick="showTime()"><img src="Images/time.png"></div>
             <div id="time-block" class="time-hide">
                 <h3 id="time-greeting">Good </h3>
                 <p id="time-text"></p>
