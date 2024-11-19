@@ -541,6 +541,10 @@ button.complete-btn {
     counter-increment: task-counter;
     content: counter(task-counter) ". ";
 } 
+.light .contact-form{
+    background-color: #d4d4d4;
+}
+
 @media (min-width: 1024px) {
     header{
         background-color: #050813;
