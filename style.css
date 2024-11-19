@@ -783,11 +783,12 @@ button.complete-btn {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .timeline {
     position: relative;
-    white-space: nowrap;
     max-width: 1400px;
     display: grid;
     grid-template-columns: 320px auto;
     grid-gap: 40px;
+    margin: 0 auto;
+    white-space: nowrap;
 }
 
 
