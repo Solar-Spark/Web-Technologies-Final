@@ -12,7 +12,6 @@ films.forEach((film) => {
     taskInput.appendChild(filmOption);
 });
 
-// Function to load tasks from local storage
 function loadTasks() {
     const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
     tasks.forEach(task => {
@@ -20,7 +19,6 @@ function loadTasks() {
     });
 }
 
-// Function to save tasks to local storage
 function saveTasks() {
     const tasks = Array.from(taskList.children).map(taskItem => ({
         text: taskItem.querySelector(".task-text").innerText,
@@ -29,12 +27,10 @@ function saveTasks() {
     localStorage.setItem("tasks", JSON.stringify(tasks));
 }
 
-// Function to add a task to the list
 function addTaskToList(taskText, isCompleted = false) {
-    // Create task element
     const taskItem = document.createElement("li");
     taskItem.className = "task-item";
-    taskItem.draggable = true; // Enable drag and drop
+    taskItem.draggable = true;
 
     if (isCompleted) {
         taskItem.classList.add("completed");
@@ -48,14 +44,13 @@ function addTaskToList(taskText, isCompleted = false) {
         </div>
     `;
 
-    // Drag & Drop functionality
     taskItem.addEventListener("dragstart", function () {
         taskItem.classList.add("dragging");
     });
 
     taskItem.addEventListener("dragend", function () {
         taskItem.classList.remove("dragging");
-        saveTasks(); // Save order to localStorage
+        saveTasks();
     });
 
     taskList.addEventListener("dragover", function (e) {
@@ -69,14 +64,12 @@ function addTaskToList(taskText, isCompleted = false) {
         taskList.insertBefore(draggingItem, nextSibling);
     });
 
-    // Add event listener for 'Complete' button
     const completeBtn = taskItem.querySelector(".complete-btn");
     completeBtn.addEventListener("click", function () {
         taskItem.classList.toggle("completed");
         saveTasks();
     });
 
-    // Add event listener for 'Delete' button
     const deleteBtn = taskItem.querySelector(".delete-btn");
     deleteBtn.addEventListener("click", function () {
         const OK = confirm("Are you sure you want to delete this film?");
@@ -86,29 +79,23 @@ function addTaskToList(taskText, isCompleted = false) {
         }
     });
 
-    // Append task to the list
     taskList.appendChild(taskItem);
 }
 
-// Event listener for the "Add" button
 addTaskBtn.addEventListener("click", function () {
     const taskText = taskInput.value.trim();
 
-    // Input validation
     if (taskText === "") {
         alert("Please choose a film!");
         return;
     }
 
-    // Add task to the list and save
     addTaskToList(taskText);
     saveTasks();
 
-    // Clear input field
     taskInput.value = "";
 });
 
-// Load tasks on page load
 document.addEventListener("DOMContentLoaded", loadTasks);
 
 recommendBtn.addEventListener("click", function () {

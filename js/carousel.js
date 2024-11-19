@@ -6,28 +6,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let currentIndex = 0;
     let interval = null;
-    let autoPlaySpeed = parseInt(speedRange.value); // Initial speed
+    let autoPlaySpeed = parseInt(speedRange.value);
 
-    // Function to start the carousel auto-play
     const startCarousel = () => {
         interval = setInterval(() => {
-            currentIndex = (currentIndex + 1) % items.length; // Loop back to the start
+            currentIndex = (currentIndex + 1) % items.length;
             updateCarousel();
         }, autoPlaySpeed);
     };
 
-    // Function to stop the carousel auto-play
     const stopCarousel = () => {
         clearInterval(interval);
     };
 
-    // Function to update the carousel position
     const updateCarousel = () => {
-        const offset = -currentIndex * 100; // Calculate offset in percentage
+        const offset = -currentIndex * 100;
         carousel.style.transform = `translateX(${offset}%)`;
     };
 
-    // Update speed based on user input
     speedRange.addEventListener("input", (event) => {
         autoPlaySpeed = parseInt(event.target.value);
         speedDisplay.textContent = `${(autoPlaySpeed / 1000).toFixed(1)}s`;
@@ -35,6 +31,5 @@ document.addEventListener("DOMContentLoaded", () => {
         startCarousel();
     });
 
-    // Start the carousel on page load
     startCarousel();
 });

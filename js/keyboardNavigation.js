@@ -4,7 +4,7 @@ document.addEventListener("keydown", (event) => {
     const focusedElement = document.activeElement;
     const index = Array.from(navItems).indexOf(focusedElement);
 
-    if (index !== -1) {  // Check if a navigation item is focused
+    if (index !== -1) {
         switch (event.key) {
             case "ArrowRight":
                 event.preventDefault();

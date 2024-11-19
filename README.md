@@ -57,7 +57,6 @@ The portal combines creative design with essential functionality, offering a ric
 ├── movies.html             # Movies page
 ├── contact-us.html         # Contact Us page
 ├── my_wish_for_movies.html # Wish List page
-├── number-sort.html        # Number sort page
 ├── css/
 │   └── style.css           # Styling for the website
 ├── js/

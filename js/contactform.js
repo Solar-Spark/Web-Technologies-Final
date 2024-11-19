@@ -14,25 +14,25 @@ function showStep(index) {
 
 function nextStep() {
     if (validateForm(currentStep)) {
-        showLoading(true);  // Show loading animation
+        showLoading(true);
         
         setTimeout(() => {
             currentStep++;
             if (currentStep >= formSteps.length) currentStep = formSteps.length - 1;
             showStep(currentStep);
-            showLoading(false);  // Hide loading animation
-        }, 3000);  // 3-second delay
+            showLoading(false);
+        }, 3000);
     }
 }
 function previousStep() {
-    showLoading(true);  // Show loading animation
+    showLoading(true);
     
     setTimeout(() => {
         currentStep--;
         if (currentStep < 0) currentStep = 0;
         showStep(currentStep);
-        showLoading(false);  // Hide loading animation
-    }, 3000);  // 3-second delay
+        showLoading(false);
+    }, 3000);
 }
 
 function validateForm(stepIndex) {
@@ -75,7 +75,7 @@ function validateForm(stepIndex) {
 }
 
 document.getElementById("multiStepForm").addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent form submission
+    event.preventDefault();
     if (validateForm(currentStep)) {
         alert("Form submitted successfully!");
     }
@@ -94,6 +94,6 @@ function showError(errorId, message) {
 function clearErrors() {
     const errorElements = document.querySelectorAll(".error");
     errorElements.forEach(element => {
-        element.textContent = ""; // Clears the error message
+        element.textContent = "";
     });
 }

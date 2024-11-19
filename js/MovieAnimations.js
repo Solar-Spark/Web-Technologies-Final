@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         entries.forEach((entry) => {
           if (entry.isIntersecting && !isScrolling) {
             isScrolling = true;
-            startAutoScroll(); // Start the scrolling animation
+            startAutoScroll();
           }
         });
       },
@@ -18,15 +18,14 @@ document.addEventListener("DOMContentLoaded", () => {
   
     function startAutoScroll() {
       let scrollAmount = 0;
-      const scrollStep = 1; // Adjust scroll speed
-      const scrollIntervalDuration = 20; // Adjust smoothness
+      const scrollStep = 1;
+      const scrollIntervalDuration = 20;
 
       function scrollTimeline() {
         scrollAmount += scrollStep;
 
-        // When the timeline reaches the end, reset to the start smoothly
         if (scrollAmount >= timeline.scrollWidth - timeline.clientWidth) {
-          scrollAmount = 0; // Reset scroll to the start
+          scrollAmount = 0;
           timeline.scrollTo({ left: scrollAmount, behavior: "smooth" });
         } else {
           timeline.scrollTo({ left: scrollAmount, behavior: "smooth" });
