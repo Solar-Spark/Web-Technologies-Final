@@ -27,7 +27,7 @@
             <div class="img-overlay"></div>
             <img src="images/games.jpeg" alt="">
             <div class="intro-text">
-                <h1>Whatch the collection of your favorite games</h1>
+                <h1>Watch the collection of your favorite games</h1>
             </div>
         </div>
         <div id="darkmode-btn" onclick="setDarkMode()"></div>
@@ -92,8 +92,82 @@
                 </div>
             </div>
         </div>
+<<<<<<< HEAD
             <h2 class="section-heading">Top-Rated Movies</h1>
             <div id="chart-container" class="chart-area"></div>
+=======
+
+        <!-- Add button to ask user if they want to take the quiz -->
+        <div id="quiz-prompt" style="text-align: center; margin-top: 20px;">
+            <button onclick="startQuiz()">Would you like to take a gaming quiz?</button>
+        </div>
+
+        <!-- Quiz Section (Initially hidden) -->
+        <div class="quiz-container" id="quiz-section" style="display: none;">
+            <h3>Gaming Quiz</h3>
+            <form id="quiz-form">
+                <div class="quiz-question">
+                    <label for="q1">What is the name of the protagonist in 'The Witcher 3'?</label>
+                    <div>
+                        <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Geralt of Rivia</label>
+                        <input type="radio" name="q1" value="b" id="q1b"><label for="q1b">Ciri</label>
+                        <input type="radio" name="q1" value="c" id="q1c"><label for="q1c">Yennefer</label>
+                        <input type="radio" name="q1" value="d" id="q1d"><label for="q1d">Triss</label>
+                    </div>
+                </div>  
+                <div class="quiz-question">
+                    <label for="q2">Which game is known for its "Survival Mode"?</label>
+                    <input type="radio" name="q2" value="a"> God of War<br>
+                    <input type="radio" name="q2" value="b"> Minecraft<br>
+                    <input type="radio" name="q2" value="c"> Skyrim<br>
+                    <input type="radio" name="q2" value="d"> The Witcher 3<br>
+                </div>
+                <div class="quiz-question">
+                    <label for="q3">What is the primary setting of 'Grand Theft Auto V'?</label>
+                    <input type="radio" name="q3" value="a"> A fictional European city<br>
+                    <input type="radio" name="q3" value="b"> A tropical island<br>
+                    <input type="radio" name="q3" value="c"> Los Santos<br>
+                    <input type="radio" name="q3" value="d"> A post-apocalyptic world<br>
+                </div>
+                <div class="quiz-question">
+                    <label for="q4">Which game features the character 'Kratos'?</label>
+                    <input type="radio" name="q4" value="a"> God of War<br>
+                    <input type="radio" name="q4" value="b"> Assassin's Creed<br>
+                    <input type="radio" name="q4" value="c"> Horizon Zero Dawn<br>
+                    <input type="radio" name="q4" value="d"> The Elder Scrolls<br>
+                </div>
+                <div class="quiz-question">
+                    <label for="q5">What is the name of the main character in 'Minecraft'?</label>
+                    <input type="radio" name="q5" value="a"> Steve<br>
+                    <input type="radio" name="q5" value="b"> Alex<br>
+                    <input type="radio" name="q5" value="c"> Herobrine<br>
+                    <input type="radio" name="q5" value="d"> Notch<br>
+                </div>
+                <div class="quiz-question">
+                    <label for="q6">In 'Skyrim', what is the name of the land you explore?</label>
+                    <input type="radio" name="q6" value="a"> Cyrodiil<br>
+                    <input type="radio" name="q6" value="b"> Tamriel<br>
+                    <input type="radio" name="q6" value="c"> Skyrim<br>
+                    <input type="radio" name="q6" value="d"> Morrowind<br>
+                </div>
+                <div class="quiz-question">
+                    <label for="q7">Which game is known for its Viking mythology?</label>
+                    <input type="radio" name="q7" value="a"> Horizon Zero Dawn<br>
+                    <input type="radio" name="q7" value="b"> The Witcher 3<br>
+                    <input type="radio" name="q7" value="c"> Assassin's Creed Valhalla<br>
+                    <input type="radio" name="q7" value="d"> God of War<br>
+                </div>
+                <button type="button" onclick="submitQuiz()">Submit</button>
+            </form>
+        </div>
+
+        <!-- Result Section -->
+        <div id="quiz-result" style="display: none;">
+            <h3>Your Score: <span id="score"></span>/7</h3>
+            <p id="feedback"></p>
+        </div>
+        
+>>>>>>> ABu
         <footer>
             <div class="team-members">
                 <p>Abukhassym Khydyrbayev, Pavel Pertsev, Yernur Kazhyakpar</p>
@@ -101,7 +175,11 @@
         </footer>
         <script src="js/time.js"></script>
         <script src="js/darkMode.js"></script>
+<<<<<<< HEAD
         <script src="https://code.highcharts.com/highcharts.js"></script>
         <script src="js/game_highcharts.js"></script>
+=======
+        <script src="js/quiz.js"></script>
+>>>>>>> ABu
     </body>
 </html>
