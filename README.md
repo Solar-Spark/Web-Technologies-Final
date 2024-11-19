@@ -50,17 +50,25 @@ The portal combines creative design with essential functionality, offering a ric
 ## Project Structure
 
 ```plaintext
-├── index.html              # Homepage
 ├── about-us.html           # About Us page
 ├── movie-news.html         # Movie News page
+├── game-news.html          # Game News page
 ├── games.html              # Games page
+├── movies.html             # Movies page
 ├── contact-us.html         # Contact Us page
 ├── my_wish_for_movies.html # Wish List page
+├── number-sort.html        # Number sort page
 ├── css/
 │   └── style.css           # Styling for the website
 ├── js/
+│   ├── animation.js        # JavaScript for animations
+│   ├── contactform.js      # JavaScript for contact form validation
 │   ├── darkMode.js         # JavaScript for dark mode
-│   └── time.js             # Additional JavaScript functionalities
+│   ├── keyboardNavigation.js # JavaScript for keyboard navigation
+│   ├── MovieAnimations.js  # JavaScript for movie-related animations
+│   ├── sorting.js          # JavaScript for sorting functionalities
+│   ├── time.js             # Additional JavaScript functionalities
+│   └── todowishlist.js     # JavaScript for the to-do wish list
 ├── images/
 │   └── *                   # Images used across the website
 ```
