@@ -57,17 +57,23 @@ The portal combines creative design with essential functionality, offering a ric
 ├── movies.html             # Movies page
 ├── contact-us.html         # Contact Us page
 ├── my_wish_for_movies.html # Wish List page
+├── login.html              # Login page
 ├── css/
 │   └── style.css           # Styling for the website
 ├── js/
-│   ├── animation.js        # JavaScript for animations
-│   ├── contactform.js      # JavaScript for contact form validation
-│   ├── darkMode.js         # JavaScript for dark mode
+│   ├── animation.js          # JavaScript for animations
+│   ├── contactform.js        # JavaScript for contact form validation
+│   ├── darkMode.js           # JavaScript for dark mode
 │   ├── keyboardNavigation.js # JavaScript for keyboard navigation
-│   ├── MovieAnimations.js  # JavaScript for movie-related animations
-│   ├── sorting.js          # JavaScript for sorting functionalities
-│   ├── time.js             # Additional JavaScript functionalities
-│   └── todowishlist.js     # JavaScript for the to-do wish list
+│   ├── MovieAnimations.js    # JavaScript for movie-related animations
+│   ├── sorting.js            # JavaScript for sorting functionalities
+│   ├── time.js               # Additional JavaScript functionalities
+│   ├── carousel.js           # JavaScript for the carousel
+│   ├── game_highcharts.js    # JavaScript for the game highcharts
+│   ├── login.js              # JavaScript for login
+│   ├── movie_highcharts.js   # JavaScript for the movie highcharts
+│   ├── quiz.js               # JavaScript for quiz
+│   └── todowishlist.js       # JavaScript for the to-do wish list
 ├── images/
 │   └── *                   # Images used across the website
 ```
