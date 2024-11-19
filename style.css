@@ -955,22 +955,32 @@ to {
     padding: 20px;
     margin: 20px auto;  /* Centers the container horizontally */
     border-radius: 8px;
-    background-color: #f9f9f9;
+    background-color: #1f1f1f;
     max-width: 1000px; /* Shrink the width of the quiz form */
     width: 90%; /* Allows some flexibility in width while keeping it centered */
     box-sizing: border-box;
     color: black;
 }
 
+.light .quiz-container{
+    background-color: #d4d4d4;
+}
+
 /* Style the quiz header */
 .quiz-container h3 {
     text-align: center;
     margin-bottom: 20px;
+    color: white;
+}
+
+.light .quiz-container h3{
+    color: black;
 }
 
 
+
 #quiz-form{
-    background-color: white;
+    background-color: 1f1f1f;
 }
 
 
