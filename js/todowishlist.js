@@ -1,6 +1,16 @@
 const taskInput = document.getElementById("task-input");
 const addTaskBtn = document.getElementById("add-task-btn");
 const taskList = document.getElementById("task-list");
+const recommendBtn = document.querySelector("#recommend-btn");
+const recommendText = document.querySelector("#recommend-txt");
+const films = ["Dune", "Red Sparrow", "Moneyball", "Trouble With The Curve 2", "The Dictator", "Haunted Mansion", "Pitch Perfect", "American Made", "Searching", "Ballerina"];
+
+films.forEach((film)=>{
+    const filmOption = document.createElement("option");
+    filmOption.value = film;
+    filmOption.innerText = film;
+    taskInput.appendChild(filmOption);
+});
 
 // Function to load tasks from local storage
 function loadTasks() {
@@ -13,7 +23,7 @@ function loadTasks() {
 // Function to save tasks to local storage
 function saveTasks() {
     const tasks = Array.from(taskList.children).map(taskItem => ({
-        text: taskItem.querySelector("span").innerText,
+        text: taskItem.querySelector(".task-text").innerText,
         completed: taskItem.classList.contains("completed")
     }));
     localStorage.setItem("tasks", JSON.stringify(tasks));
@@ -28,10 +38,10 @@ function addTaskToList(taskText, isCompleted = false) {
         taskItem.classList.add("completed");
     }
     taskItem.innerHTML = `
-        <span>${taskText}</span>
-        <div>
-            <button class="complete-btn">Complete</button>
-            <button class="delete-btn">Delete</button>
+        <div class="task-text">${taskText}</div>
+        <div class="wish-btns">
+            <button class="complete-btn"></button>
+            <button class="delete-btn"></button>
         </div>
     `;
 
@@ -45,7 +55,7 @@ function addTaskToList(taskText, isCompleted = false) {
     // Add event listener for 'Delete' button
     const deleteBtn = taskItem.querySelector(".delete-btn");
     deleteBtn.addEventListener("click", function () {
-        const OK = confirm("Are you sure you want to delete this task?");
+        const OK = confirm("Are you sure you want to delete this film?");
         if (OK) {
             taskItem.remove();
             saveTasks();
@@ -62,13 +72,7 @@ addTaskBtn.addEventListener("click", function () {
 
     // Input validation
     if (taskText === "") {
-        alert("Please enter a task!");
-        return;
-    }
-
-    // Check if the number of tasks is less than 5
-    if (taskList.childElementCount >= 5) {
-        alert("Maximum possible amount of tasks is 5!");
+        alert("Please choose a film!");
         return;
     }
 
@@ -82,3 +86,7 @@ addTaskBtn.addEventListener("click", function () {
 
 // Load tasks on page load
 document.addEventListener("DOMContentLoaded", loadTasks);
+
+recommendBtn.addEventListener("click", function(){
+    recommendText.textContent = "Try to watch " + films[Math.round(Math.random() * films.length)]; 
+})
