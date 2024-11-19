@@ -862,3 +862,148 @@ to {
     animation-delay: 8.5s;
 }
     
+<<<<<<< HEAD
+.chart-area {
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #020307;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+.carousel-container {
+    max-width: 80%;
+    margin: 2rem auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 73%;
+    height: 85%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media (max-width: 1024px) {
+    .carousel-container {
+        max-width: 90%;
+    }
+
+    .carousel-item img {
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-container {
+        max-width: 100%;
+        margin: 1rem auto;
+    }
+
+    .carousel-item img {
+        border-radius: 5px;
+    }
+}
+
+.speed-control {
+    margin-top: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.speed-control label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.speed-control input[type="range"] {
+    width: 80%; 
+    margin: 0 auto;
+}
+
+#speed-display {
+    margin-left: 0; 
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+#speed-range {
+    width: 50%;
+
+}
+
+=======
+/* Center the quiz-container on the page */
+.quiz-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px auto;  /* Centers the container horizontally */
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    max-width: 1000px; /* Shrink the width of the quiz form */
+    width: 90%; /* Allows some flexibility in width while keeping it centered */
+    box-sizing: border-box;
+    color: black;
+}
+
+/* Style the quiz header */
+.quiz-container h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+#quiz-form{
+    background-color: white;
+}
+
+
+/* Style for each quiz block */
+.quiz-question {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc; /* Border around the block */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background */
+}
+
+/* Style for the question text */
+.quiz-question label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Align radio buttons and labels horizontally */
+.quiz-question div {
+    display: flex;
+    flex-direction: column; /* Vertical stack of options */
+    gap: 8px; /* Space between radio button options */
+}
+
+/* Center the result section */
+#quiz-result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Center the prompt button initially */
+#quiz-prompt {
+    text-align: center;
+    margin-top: 20px;
+}
+>>>>>>> ABu
