@@ -768,3 +768,38 @@ button.complete-btn {
         margin-bottom: 1rem;
     }
 }
+
+/* Animated Topic-Related Timeline */
+.timeline-section {
+    padding: 40px 20px;
+}
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.timeline-item {
+    position: relative;
+    background: #020307;
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+    transition: transform 0.3s;
+    top: 20px;
+}
+
+.light .timeline-item {
+    background: #f1f1f1;
+}
+.timeline-item:hover {
+    transform: translateY(-10px);
+}
+.timeline-content {
+    text-align: center;
+    color: white;
+}
+
+.light .timeline-content{
+    color: black;
+}
