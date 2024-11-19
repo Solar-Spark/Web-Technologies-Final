@@ -823,14 +823,31 @@ button.complete-btn {
 .speed-control {
     margin-top: 1rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-#speed-range {
-    width: 50%;
+.speed-control label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.speed-control input[type="range"] {
+    width: 80%; 
+    margin: 0 auto;
 }
 
 #speed-display {
-    margin-left: 0.5rem;
+    margin-left: 0; 
     font-weight: bold;
+    font-size: 1rem;
+}
+
+
+#speed-range {
+    width: 50%;
+
 }
 
