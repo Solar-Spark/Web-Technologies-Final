@@ -65,6 +65,8 @@ The portal combines creative design with essential functionality, offering a ric
 ├── images/
 │   └── *                   # Images used across the website
 
+-- 
+
 ## Team
 
 This project was created by:
@@ -72,6 +74,8 @@ This project was created by:
 - Abukhassym Khydyrbayev
 - Pavel Pertsev
 - Yernur Kazhyakpar
+
+--
 
 ## How to Run
 
