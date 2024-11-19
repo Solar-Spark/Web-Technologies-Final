@@ -862,3 +862,62 @@ to {
     animation-delay: 8.5s;
 }
     
+/* Center the quiz-container on the page */
+.quiz-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px auto;  /* Centers the container horizontally */
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    max-width: 1000px; /* Shrink the width of the quiz form */
+    width: 90%; /* Allows some flexibility in width while keeping it centered */
+    box-sizing: border-box;
+    color: black;
+}
+
+/* Style the quiz header */
+.quiz-container h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+#quiz-form{
+    background-color: white;
+}
+
+
+/* Style for each quiz block */
+.quiz-question {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc; /* Border around the block */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background */
+}
+
+/* Style for the question text */
+.quiz-question label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Align radio buttons and labels horizontally */
+.quiz-question div {
+    display: flex;
+    flex-direction: column; /* Vertical stack of options */
+    gap: 8px; /* Space between radio button options */
+}
+
+/* Center the result section */
+#quiz-result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Center the prompt button initially */
+#quiz-prompt {
+    text-align: center;
+    margin-top: 20px;
+}
