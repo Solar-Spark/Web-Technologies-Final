@@ -12,8 +12,6 @@ Welcome to the **Film & Game News Portal**, your go-to website for all things mo
 4. [Project Structure](#project-structure)
 5. [Team](#team)
 6. [How to Run](#how-to-run)
-7. [Screenshots](#screenshots)
-8. [Contact](#contact)
 
 ---
 
@@ -46,6 +44,7 @@ The portal combines creative design with essential functionality, offering a ric
 - **JavaScript**: For interactive features like dark mode.
 - **Yandex Maps API**: To display the project team's location.
 
+
 ---
 
 ## Project Structure
@@ -64,6 +63,7 @@ The portal combines creative design with essential functionality, offering a ric
 │   └── time.js             # Additional JavaScript functionalities
 ├── images/
 │   └── *                   # Images used across the website
+```
 
 ---
 
@@ -75,15 +75,11 @@ This project was created by:
 - Pavel Pertsev
 - Yernur Kazhyakpar
 
----
-
 ## How to Run
 
 Clone the repository to your local machine:
-
 ```bash
 git clone <repository_url>
 ```
-
 2. Open the project folder.
 3. Launch index.html in your preferred browser.
