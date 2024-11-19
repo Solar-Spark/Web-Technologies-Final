@@ -769,37 +769,90 @@ button.complete-btn {
     }
 }
 
-/* Animated Topic-Related Timeline */
-.timeline-section {
-    padding: 40px 20px;
-}
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .timeline {
+    position: relative;
+    white-space: nowrap;
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: 320px auto;
+    grid-gap: 40px;
+}
+
+
+.timeline .info {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 40px;
-}
-.timeline-item {
-    position: relative;
-    background: #020307;
-    padding: 20px;
-    border-radius: 10px;
-    width: 40%;
-    transition: transform 0.3s;
-    top: 20px;
+    justify-content: center;
+    padding: 40px 40px;
+    white-space: normal;
 }
 
-.light .timeline-item {
-    background: #f1f1f1;
-}
-.timeline-item:hover {
-    transform: translateY(-10px);
-}
-.timeline-content {
-    text-align: center;
-    color: white;
+.timeline ol {
+    padding: 250px;
+    overflow-x: hidden; 
 }
 
-.light .timeline-content{
-    color: black;
+.timeline ol li {
+    display: inline-block;
+    width: 160px;
+    margin-left: 100px;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    opacity: 0; /* Start hidden */
 }
+
+.timeline ol li div {
+    position: absolute;
+    width: 280px;
+    padding: 15px;
+    font-size: 1rem;
+    white-space: normal;
+}
+
+
+.timeline ol li:nth-child(odd) div {
+    transform: translateY(-100%);
+}
+
+.timeline time {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+from {
+    transform: translateY(30px);
+    opacity: 0;
+}
+to {
+    transform: translateY(0);
+    opacity: 1;
+}
+}
+
+.timeline ol li:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.timeline ol li:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.timeline ol li:nth-child(3) {
+    animation-delay: 2s;
+}
+
+.timeline ol li:nth-child(4) {
+    animation-delay: 3s;
+}
+
+.timeline ol li:nth-child(5) {
+    animation-delay: 8.5s;
+}
+    

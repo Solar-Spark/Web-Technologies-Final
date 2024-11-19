@@ -1,15 +1,38 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const timelineItems = document.querySelectorAll(".timeline-item");
+    const timeline = document.querySelector(".timeline ol");
+    let isScrolling = false;
+    let scrollInterval;
 
-    const observerOptions = { threshold: 0.5 };
-
-    const observer = new IntersectionObserver((entries) => {
+    const observer = new IntersectionObserver(
+      (entries) => {
         entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("active");
-            }
+          if (entry.isIntersecting && !isScrolling) {
+            isScrolling = true;
+            startAutoScroll(); // Start the scrolling animation
+          }
         });
-    }, observerOptions);
+      },
+    );
+  
+    observer.observe(document.querySelector(".timeline"));
+  
+    function startAutoScroll() {
+      let scrollAmount = 0;
+      const scrollStep = 1; // Adjust scroll speed
+      const scrollIntervalDuration = 20; // Adjust smoothness
 
-    timelineItems.forEach((item) => observer.observe(item));
+      function scrollTimeline() {
+        scrollAmount += scrollStep;
+
+        // When the timeline reaches the end, reset to the start smoothly
+        if (scrollAmount >= timeline.scrollWidth - timeline.clientWidth) {
+          scrollAmount = 0; // Reset scroll to the start
+          timeline.scrollTo({ left: scrollAmount, behavior: "smooth" });
+        } else {
+          timeline.scrollTo({ left: scrollAmount, behavior: "smooth" });
+        }
+      }
+
+      scrollInterval = setInterval(scrollTimeline, scrollIntervalDuration);
+    }
 });
