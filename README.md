@@ -77,7 +77,7 @@ This project was created by:
 
 ## How to Run
 
-Clone the repository to your local machine:
+1. Clone the repository to your local machine:
 ```bash
 git clone <repository_url>
 ```
