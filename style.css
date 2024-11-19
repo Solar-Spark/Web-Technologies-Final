@@ -862,3 +862,45 @@ to {
     animation-delay: 8.5s;
 }
     
+.chart-area {
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #020307;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+.carousel-container {
+    max-width: 80%;
+    margin: 2rem auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    text-align: center;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.speed-control {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+#speed-range {
+    width: 50%;
+}
+
+#speed-display {
+    margin-left: 0.5rem;
+    font-weight: bold;
+}
