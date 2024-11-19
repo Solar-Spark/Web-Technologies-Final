@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
       series: [{
           name: 'Ratings',
           data: [9, 8.7, 9.3, 10, 8.5, 9.4, 8.3, 8.5],
-          color: '#007bff'
+          color: '#d61818'
       }]
   });
 });

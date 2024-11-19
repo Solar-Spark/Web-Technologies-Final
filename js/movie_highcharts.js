@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
       series: [{
           name: 'Ratings',
           data: [8, 6.6, 7.6, 6.8, 6.5, 5.2, 7.1, 7.1, 7.6, 6.3],
-          color: '#007bff'
+          color: '#d61818'
       }]
   });
 });
